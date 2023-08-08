@@ -1,19 +1,19 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
-import {Ionicons} from '@expo/vector-icons'
+import {MaterialIcons,EvilIcons, FontAwesome} from '@expo/vector-icons'
 
 export default function ChatInputComponent() {
   return (
     <View style={styles.container}>
       <View style={styles.leftView}>
-        <View style={styles.emoji}/>
+        <MaterialIcons name='emoji-emotions' size={24} style={styles.emoji}/>
         <TextInput placeholder={'Type a message'} style={styles.textInput}/>
-        <View style={styles.camera}/>
-        <View style={styles.clip}/>
+        <MaterialIcons name='camera-alt' size={24} style={styles.emoji}/>
+        <EvilIcons name='paperclip' size={24} style={styles.emoji}/>
 
       </View>
       <View style={styles.micContainer}>
-        <View style={styles.mic}/>
+      <FontAwesome name='microphone' size={24} style={styles.mic}/>
         
         
         </View> 
@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
 
     },
     emoji:{
-        height: 21,
+        //height: 21,
         width: 21,
-        backgroundColor: '#4F4F4F',
+        color: '#272727',
         marginRight: 10
 
     },
@@ -75,9 +75,8 @@ const styles = StyleSheet.create({
 
     },
     mic:{
-        height: 21,
-        width:21,
-        backgroundColor:'#4F4F4F',
+        justifyContent:'center',
+        alignItems:'center'
         
 
     }
