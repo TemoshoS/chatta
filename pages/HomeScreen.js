@@ -7,24 +7,26 @@ import ChatRequest from '../components/ChatRequest'
 import FAB from '../components/FAB'
 import ChatComponent from '../components/ChatComponent'
 
-export const HomeScreen = () => {
+export const HomeScreen = ({navigation}) => {
     const [isModalVisible, setIsModalVisble] = useState(false);
 
     return (
         <View style={styles.container}>
-          {/* <ScrollView scrollEnabled={true}>
-            <ChatListItem/>
-           <ChatInputComponent />
            <Modal transparent={true} visible={isModalVisible}>
              <ChatRequest onPress={()=>setIsModalVisble(false)}/>
            </Modal>
+           <ScrollView scrollEnabled={true}>
+            <ChatListItem navigation={navigation}/>
+            <ChatListItem navigation={navigation}/>
+            <ChatListItem navigation={navigation}/>
+          
           
           </ScrollView>
 
           <Pressable onPress={()=>setIsModalVisble(true)}>
           <FAB/>
-          </Pressable>*/}
-          <ChatComponent />
+          </Pressable>
+          {/* <ChatComponent /> */}
 
         </View>
     )
@@ -34,7 +36,7 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#26394D',
-        width: '100%'
+        
     }
 
 })

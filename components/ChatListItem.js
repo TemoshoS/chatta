@@ -1,11 +1,12 @@
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 
-export default class ChatListItem extends Component {
-    render() {
+export default function ChatListItem({navigation}) {
+    
         return (
             <View style={styles.container}>
                 <View style={styles.img} />
+                <TouchableOpacity style={styles.touchable} onPress={()=>navigation.navigate('ChatRoom')} >
                 <View style={styles.rightContent}>
                     <View style={styles.topText}>
                         <Text style={styles.contactName}>Temosho</Text>
@@ -22,9 +23,12 @@ export default class ChatListItem extends Component {
                     </View>
 
                 </View>
+
+                </TouchableOpacity>
+               
             </View>
         )
-    }
+    
 }
 
 const styles = StyleSheet.create({
@@ -39,6 +43,10 @@ const styles = StyleSheet.create({
         width: 48,
         borderRadius: 24,
         backgroundColor: '#FFFF'
+
+    },
+    touchable:{
+        flex: 1
 
     },
     rightContent: {
