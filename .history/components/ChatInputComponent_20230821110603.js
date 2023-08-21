@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
     container:{
         padding: 10,
         justifyContent: 'center',
-        flexDirection: 'row',
-        width: '100%'
+        flexDirection: 'row'
     },
     leftView:{
         height: 42,

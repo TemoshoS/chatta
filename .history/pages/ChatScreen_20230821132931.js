@@ -19,18 +19,11 @@ const styles = StyleSheet.create({
   container:{
     backgroundColor: '#26394D',
     flex: 1,
-    overflow: 'hidden',
-    paddingBottom: 60
-    
+    overflow
   },
   inputs: {
     position: 'absolute',
-    bottom : 0,
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 60,
-    
+    bottom : 0
   }
 })
 

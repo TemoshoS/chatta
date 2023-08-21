@@ -32,7 +32,7 @@ export default function ChatComponent() {
     ]
     const renderItem = ({item, index}) => {
         return(
-            <View >
+            <View>
                 <View style={[
                     styles.contentHolder,
                     item.userID === userID ? styles.rightContent : styles.leftContent,
@@ -79,10 +79,7 @@ export default function ChatComponent() {
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
         padding: 10,
-        overflow: 'hidden'
-       
 
     },
     contentHolder:{

@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#26394D',
     flex: 1,
     overflow: 'hidden',
-    paddingBottom: 60
     
   },
   inputs: {
@@ -28,8 +27,7 @@ const styles = StyleSheet.create({
     bottom : 0,
     width: '100%',
     alignItems: 'center',
-    justifyContent: 'center',
-    height: 60,
+    justifyContent: 'center'
     
   }
 })
