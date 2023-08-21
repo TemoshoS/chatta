@@ -7,13 +7,11 @@ import KeyboardComponent from '../components/KeyboardComponent'
 const ChatScreen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
+      <View></View>
       <ChatComponent/>
       <View style={styles.inputs}>
         <ChatInputComponent/>
       </View>
-      </View>
-      
       <KeyboardComponent/>
 
     </View>
@@ -24,13 +22,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#26394D',
     flex: 1,
     overflow: 'hidden',
-   
-    
-  },
-  content:{
-    flex: 1,
     paddingBottom: 60
-
+    
   },
   inputs: {
     position: 'absolute',

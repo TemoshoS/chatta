@@ -24,14 +24,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#26394D',
     flex: 1,
     overflow: 'hidden',
-   
+    paddingBottom: 60
     
   },
   content:{
-    flex: 1,
-    paddingBottom: 60
-
-  },
+    
+  }
   inputs: {
     position: 'absolute',
     bottom : 0,

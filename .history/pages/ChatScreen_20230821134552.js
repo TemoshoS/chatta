@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#26394D',
     flex: 1,
     overflow: 'hidden',
-   
+    paddingBottom: 60
     
   },
   content:{
