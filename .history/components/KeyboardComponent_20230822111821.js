@@ -2,14 +2,12 @@ import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View }
 import React,{useState, useEffect} from 'react'
 import {EmojiKeyboard} from 'rn-emoji-keyboard'
 import { Ionicons } from '@expo/vector-icons'
-import { MaterialIcons } from '@expo/vector-icons';
 
 const KeyboardComponent = () => {
     const [emoji, setEmoji] = useState('')
     const [showEmoBoard, setShowEmoBoard] = useState(false)
     const [gifs, setGifs] = useState([])
     const [showGifBoard, setShowGifBoard] = useState(true)
-    const [showSearchInput, setShowSearchInput] = useState(false)
 
     const captureEmoji =(ev)=>{
         console.log(ev);
@@ -56,20 +54,7 @@ const KeyboardComponent = () => {
           />
         )}
       <View style={styles.keyboardToggle}>
-        <TouchableOpacity onPress={() => setShowSearchInput(false)}>
-          <MaterialIcons name='search' size={24} color={'white'} style={[styles.searchIcon, styles.icon]} />
-        </TouchableOpacity>
-
-        <TouchableOpacity onPress={() =>{setShowEmoBoard(true), setShowGifBoard(false)}}>
-          <MaterialIcons name="emoji-emotions" size={24} color="white" style={styles.icon} />
-        </TouchableOpacity>
-
-        <TouchableOpacity onPress={() =>{setShowEmoBoard(false), setShowGifBoard(true)}}>
-          <MaterialIcons name='gif' size={24} color='white' style={styles.icon} />
-        </TouchableOpacity>
-       
-        
-        
+        <Ionicons name='search' size={24} color={'white'}/>
 
       </View>
     </View>
@@ -86,16 +71,7 @@ const styles = StyleSheet.create({
     keyboardToggle:{
         height: 50,
         flexDirection: 'row',
-        width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    searchIcon:{
-      position: 'absolute',
-      left: 5
-    },
-    icon:{
-      margin: 10
+        width: '100%'
     },
     gifContainer:{
       height: 110,

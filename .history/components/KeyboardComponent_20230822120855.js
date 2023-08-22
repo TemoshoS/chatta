@@ -9,7 +9,6 @@ const KeyboardComponent = () => {
     const [showEmoBoard, setShowEmoBoard] = useState(false)
     const [gifs, setGifs] = useState([])
     const [showGifBoard, setShowGifBoard] = useState(true)
-    const [showSearchInput, setShowSearchInput] = useState(false)
 
     const captureEmoji =(ev)=>{
         console.log(ev);
@@ -56,15 +55,15 @@ const KeyboardComponent = () => {
           />
         )}
       <View style={styles.keyboardToggle}>
-        <TouchableOpacity onPress={() => setShowSearchInput(false)}>
+        <TouchableOpacity onPress={() =>{}}>
           <MaterialIcons name='search' size={24} color={'white'} style={[styles.searchIcon, styles.icon]} />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() =>{setShowEmoBoard(true), setShowGifBoard(false)}}>
+        <TouchableOpacity onPress={() =>}>
           <MaterialIcons name="emoji-emotions" size={24} color="white" style={styles.icon} />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() =>{setShowEmoBoard(false), setShowGifBoard(true)}}>
+        <TouchableOpacity onPress={() =>}>
           <MaterialIcons name='gif' size={24} color='white' style={styles.icon} />
         </TouchableOpacity>
        

@@ -9,7 +9,6 @@ const KeyboardComponent = () => {
     const [showEmoBoard, setShowEmoBoard] = useState(false)
     const [gifs, setGifs] = useState([])
     const [showGifBoard, setShowGifBoard] = useState(true)
-    const [showSearchInput, setShowSearchInput] = useState(false)
 
     const captureEmoji =(ev)=>{
         console.log(ev);
